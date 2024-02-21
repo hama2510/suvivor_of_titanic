@@ -1,0 +1,10 @@
+model:
+  # name: RandomForestClassifier
+  # config:
+  #   n_estimators: 100
+  name: LogisticRegression
+data:
+  features: {'Pclass':'num', 'Sex':'cat', 'Age':'num', 'Fare':num}
+  target: {'Survived':'cat'}
+  train_id_list: null
+  test_id_list: null
