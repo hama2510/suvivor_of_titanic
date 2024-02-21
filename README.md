@@ -55,3 +55,4 @@ After checking the model result, you can select the default model for the predic
 
 ### Predict the survivors of the Titanic
 You can get the prediction by upload a csv of data into the model. The csv should not have missing value in the features. The server will use the model registed above to give the prediction. Use API <code>http://127.0.0.1:8000/predict</code> with method POST and csv file (using keyword file).
+***Before predicting a model, please make sure that you assigned the model as above***
