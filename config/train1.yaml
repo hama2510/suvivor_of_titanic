@@ -1,0 +1,7 @@
+model:
+  name: RandomForestClassifier
+data:
+  features: {'Pclass':'num', 'Sex':'cat', 'Age':'num', 'Fare':'num'}
+  target: {'Survived':'cat'}
+  train_id_list: null
+  test_id_list: null
