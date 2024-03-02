@@ -1,6 +1,15 @@
 # Report
 
 1. Program architecture
+    1. Start server
+    2. Upload data into server. You can do this step multi times
+    3. Train a model
+        1. If it is the first model, then assign it as the inference model
+        2. If it is not the first model, run test and compare it with the current inference model. If it is better, assign it as the new inference model
+    You can either upload new data or train other model
+    4. While there is a model was assigned as inference model, you can predict the suvivor of the Titanic.
+
+    ![Screenshot](imgs/flow_chart.png)
 
 2. Experiment for model training
     1. Using [data_processing.ipnb](notebooks/data_processing.ipynb) to generate training/testing data. The generated data will be stored in [data/csv_data](data/csv_data) folder. There will be 3 files, including train.csv, train_upsample.csv, and test.csv. The train.csv contains the training data without upsampling data, while the train_upsample.csv contains data after upsamping for data balance.

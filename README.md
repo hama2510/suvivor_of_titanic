@@ -5,7 +5,8 @@ This project is an example for building a web server that train a model to predi
 1. Create environment with conda: <code>conda create -n env python=3.8</code>
 2. Clone project and go to inside
 3. Install requirement library: <code>pip install -r requirements.txt</code>
-4. Start the server <code>python src/app.py</code> Default port is 8000. You can change it in src/utils/constants.py
+4. Run [data_processing.ipnb](notebooks/data_processing.ipynb) to generate training/testing data
+5. Start the server <code>python src/app.py</code> Default port is 8000. You can change it in src/utils/constants.py
 
 ## How to use the server
 
